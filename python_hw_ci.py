@@ -1,5 +1,6 @@
 import os
 import pytest
+import mymodule
 
 def hw_fx():
     print("Hello, World")
@@ -19,3 +20,6 @@ def test_hw():
 
 def test_multiply():
     assert multiply(8, 12) > 89
+
+def test_mymodule_divide():
+    assert mymodule.divide(8, 3) >= -1
